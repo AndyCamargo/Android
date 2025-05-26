@@ -17,7 +17,16 @@ public class MainActivity extends AppCompatActivity {
         myWebSetting = myWebView.getSettings();
         myWebSetting.setJavaScriptEnabled(true);
         myWebSetting.setDomStorageEnabled(true);
+
+        //myWebSetting.setUseWideViewPort(true);
+        //myWebSetting.setLoadWithOverviewMode(true);
+
+        //myWebSetting.setSupportZoom(true);
+        //myWebSetting.setBuiltInZoomControls(true);
+        //myWebSetting.setDisplayZoomControls(false);
+
         myWebView.loadUrl("https://transfiya.app/login");
+        //myWebView.loadUrl("https://ui.pse.com.co/ui/");
         myWebView.setWebViewClient(new WebViewClient());
     }
     public void onBackPressed() {
